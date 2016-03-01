@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_all"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/info_item_style"
+            android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="次数*" />
+
+            <EditText
+                android:id="@+id/info_et_count"
+                style="@style/info_item_et_style"
+                android:inputType="number"
+                android:text="1"
+                android:hint="请输入次数" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="笔录格式*" />
+
+            <TextView
+                android:id="@+id/info_tv_category"
+                style="@style/info_item_tv_arrow"
+                android:text="治安询问" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="人员类型*" />
+
+            <TextView
+                android:id="@+id/info_tv_suspicion"
+                style="@style/info_item_tv_arrow"
+                android:text="嫌疑人" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="到案方式*" />
+
+            <TextView
+                android:id="@+id/info_tv_type"
+                style="@style/info_item_tv_arrow"
+                android:text="口头传唤" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout
+            style="@style/info_item_style"
+            android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="开始时间*" />
+
+            <TextView
+                android:id="@+id/info_tv_start_time"
+                style="@style/info_item_tv_arrow" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="结束时间*" />
+
+            <TextView
+                android:id="@+id/info_tv_end_time"
+                style="@style/info_item_tv_arrow" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="地点*" />
+
+            <EditText
+                android:id="@+id/info_et_add"
+                style="@style/info_item_et_style"
+                android:hint="请输入地点" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout
+            style="@style/info_item_style"
+            android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="居民身份证*" />
+
+            <EditText
+                android:id="@+id/info_et_id"
+                style="@style/info_item_et_style"
+                android:hint="请输入身份证" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="被询问人*" />
+
+            <EditText
+                android:id="@+id/info_et_name"
+                style="@style/info_item_et_style"
+                android:hint="请输入被询问人姓名" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="曾用名*" />
+
+            <EditText
+                android:id="@+id/info_et_name_old"
+                style="@style/info_item_et_style"
+                android:hint="请输入被询问人曾用名" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="性别*" />
+
+            <TextView
+                android:id="@+id/info_tv_sex"
+                style="@style/info_item_tv_arrow"
+                android:text="男" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="出生日期*" />
+
+            <TextView
+                android:id="@+id/info_tv_birthday"
+                style="@style/info_item_tv_arrow"
+                android:text="请选择出生日期" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="文化程度*" />
+
+            <TextView
+                android:id="@+id/info_tv_education"
+                style="@style/info_item_tv_arrow"
+                android:text="文盲" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="年龄*" />
+
+            <EditText
+                android:id="@+id/info_et_age"
+                style="@style/info_item_et_style"
+                android:inputType="number"
+                android:hint="请选择年龄" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="民族*" />
+
+            <TextView
+                android:id="@+id/info_tv_nation"
+                style="@style/info_item_tv_arrow"
+                android:text="汉族" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="政治面貌*" />
+
+            <TextView
+                android:id="@+id/info_tv_politics"
+                style="@style/info_item_tv_arrow"
+                android:text="人大代表" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout
+            style="@style/info_item_style"
+            android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="户籍地址*" />
+
+            <EditText
+                android:id="@+id/info_et_census_add"
+                style="@style/info_item_et_style"
+                android:hint="请输入户籍地址" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="现住址*" />
+
+            <EditText
+                android:id="@+id/info_et_now_add"
+                style="@style/info_item_et_style"
+                android:hint="请输入现住址" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="工作单位*" />
+
+            <EditText
+                android:id="@+id/info_et_company_add"
+                style="@style/info_item_et_style"
+                android:hint="请输入工作单位" />
+        </LinearLayout>
+
+        <View style="@style/info_item_line_style" />
+
+        <LinearLayout style="@style/info_item_style">
+
+            <TextView
+                style="@style/info_item_tv_style"
+                android:text="联系电话*" />
+
+            <EditText
+                android:id="@+id/info_et_tel"
+                style="@style/info_item_et_style"
+                android:hint="请输入联系电话" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next_ask"
+            style="@style/wuye_cm_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_marginTop="16dip"
+            android:text="继续问话" />
+    </LinearLayout>
+</ScrollView>

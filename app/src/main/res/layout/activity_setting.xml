@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_all"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        />
+
+    <View style="@style/listview_indent_sep"/>
+
+    <include
+        android:id="@+id/listitem_update"
+        layout="@layout/listitem_person_info"/>
+
+    <View style="@style/listview_indent_sep"/>
+
+    <include
+        android:id="@+id/listitem_feedback"
+        layout="@layout/listitem_person_info"/>
+
+    <View style="@style/listview_indent_sep"/>
+
+    <include
+        android:id="@+id/listitem_about"
+        layout="@layout/listitem_person_info"/>
+
+    <View style="@style/listview_indent_sep"/>
+</LinearLayout>

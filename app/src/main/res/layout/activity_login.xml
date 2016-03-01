@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dimen_6"
+        android:layout_margin="@dimen/dimen_6"
+        android:background="@color/background_all"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip">
+
+            <TextView
+                android:id="@+id/mobil"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="用户名"
+                android:textColor="#77829C"
+                android:textSize="18sp" />
+
+            <com.police.momo.widget.ClearEditText
+                android:id="@+id/input_userName"
+                style="@style/edittext_style_with_null_bg"
+                android:layout_toRightOf="@+id/mobil"
+                android:hint="请输入您的用户名"
+                android:inputType="phone" />
+        </RelativeLayout>
+
+        <View style="@style/line_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip">
+
+            <TextView
+                android:id="@+id/mobil_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="密    码"
+                android:textColor="#77829C"
+                android:textSize="18sp" />
+
+            <com.police.momo.widget.ClearEditText
+                android:id="@+id/input_password"
+                style="@style/edittext_style_with_null_bg"
+                android:layout_toRightOf="@+id/mobil_pwd"
+                android:hint="请输入您的密码"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/wuye_cm_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_marginTop="16dip"
+            android:text="登录系统" />
+    </LinearLayout>
+</LinearLayout>

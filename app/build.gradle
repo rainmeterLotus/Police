@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.police.momo"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 2
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/raw', 'src/main/res/anim'] } }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/itextpdf-5.5.7.jar')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile project(':umeng_lib')
+}

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.police.momo.query.QueryActivity">
+
+    <item
+        android:id="@+id/action_join"
+        android:orderInCategory="100"
+        android:title="加入"
+        app:showAsAction="always"/>
+</menu>
